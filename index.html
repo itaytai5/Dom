@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokémon App</title>
+    <script src="./dom.js"></script>
+    <style>
+      #pokemon-container {
+        margin-top: 20px;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      #pokemon-image {
+        max-width: 200px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="pokemon-name">Enter Pokémon Name:</label>
+    <input type="text" id="pokemon-name" />
+    <button onclick="fetchPokemonData()">Get Pokémon Data</button>
+
+    <div id="pokemon-container">
+      <p id="pokemon-name-display"></p>
+      <img id="pokemon-image" src="" alt="Pokémon Image" />
+      <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>
